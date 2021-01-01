@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "https://github.com/megos/spa-e2e-sandbox",
   "author": "megos",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "app",
+    "e2e/*"
+  ]
 }
