@@ -9,5 +9,9 @@
   "workspaces": [
     "app",
     "e2e/*"
-  ]
+  ],
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  }
 }
