@@ -27,7 +27,7 @@ jobs:
       - run: yarn
 
       - name: launch app
-        run: cd app && yarn start &
+        run: yarn workspace app start &
 
       - name: playwright
-        run: cd e2e/playwright && yarn test
+        run: yarn workspace playwright test
