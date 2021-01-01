@@ -1,0 +1,8 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^6.2.0"
+  }
+}
