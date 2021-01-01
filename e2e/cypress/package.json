@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "prettier --check \"{integration,plugins,support}/**/*.{js,ts}\""
+    "lint": "prettier --check \"{integration,plugins,support}/**/*.{js,ts}\"",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox"
   },
   "devDependencies": {
     "cypress": "^6.2.0"
