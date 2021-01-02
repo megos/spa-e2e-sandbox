@@ -19,6 +19,7 @@ jobs:
         with:
           path: |
             ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            ~/.cache/Cypress
             node_modules
             */*/node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
@@ -27,9 +28,9 @@ jobs:
       - run: yarn
 
       - name: launch app
-        run: cd app && yarn start &
+        run: yarn workspace app start &
 
       # We can use cypress-io/github-action
       # See. https://github.com/cypress-io/github-action
       - name: cypress
-        run: cd e2e/cypress && yarn cy:run:chrome
+        run: yarn workspace cypress cy:run:chrome

@@ -1,0 +1,13 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "lint": "prettier --check \"top.spec.js\"",
+    "test": "node top.spec.js"
+  },
+  "devDependencies": {
+    "playwright": "1.7.1"
+  }
+}

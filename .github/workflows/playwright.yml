@@ -1,10 +1,10 @@
-name: prettier
+name: playwright
 on:
   - pull_request
   
 jobs:
-  prettier:
-    name: runner / prettier
+  playwright:
+    name: runner / playwright
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -26,5 +26,11 @@ jobs:
 
       - run: yarn
 
-      - name: prettier
-        run: yarn workspaces run lint
+      - name: launch app
+        run: yarn workspace app start &
+
+      - uses: microsoft/playwright-github-action@v1
+
+      - name: playwright
+        run: yarn workspace playwright test
+        timeout-minutes: 2
