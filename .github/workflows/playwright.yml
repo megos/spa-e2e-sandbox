@@ -29,5 +29,8 @@ jobs:
       - name: launch app
         run: yarn workspace app start &
 
+      - uses: microsoft/playwright-github-action@v1
+
       - name: playwright
         run: yarn workspace playwright test
+        timeout-minutes: 2
