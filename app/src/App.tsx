@@ -1,15 +1,20 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography } from '@material-ui/core'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom'
+import { Login } from './Login'
+import { Top } from './Top'
 
 function App() {
   return (
-    <>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6">App</Typography>
-        </Toolbar>
-      </AppBar>
-    </>
+    <Router>
+      <Switch>
+        <Route path="/login" component={Login} />
+        <Route path="/" component={Top} />
+      </Switch>
+    </Router>
   )
 }
 
