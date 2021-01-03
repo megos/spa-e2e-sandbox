@@ -25,6 +25,6 @@ module.exports = {
     /* ... */
   },
   alias: {
-    /* ... */
+    'react-cookie': 'react-cookie/cjs'
   },
 };

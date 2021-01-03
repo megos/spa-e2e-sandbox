@@ -6,31 +6,30 @@ import {
   Redirect,
   RouteProps,
 } from 'react-router-dom'
-import { RecoilRoot, useRecoilValue } from 'recoil'
+import { CookiesProvider, useCookies } from 'react-cookie'
 import { Login } from './Login'
-import { userState } from './recoil'
 import { Top } from './Top'
 
 const PrivateRoute: React.FC<RouteProps> = ({ children, ...rest }) => {
-  const user = useRecoilValue(userState)
+  const [cookies] = useCookies(['token'])
   return (
     <Route
       {...rest}
-      render={() => (user ? children : <Redirect to={'/login'} />)}
+      render={() => (cookies.token ? children : <Redirect to={'/login'} />)}
     />
   )
 }
 
 function App() {
   return (
-    <RecoilRoot>
+    <CookiesProvider>
       <Router>
         <Switch>
           <Route path="/login" component={Login} />
           <PrivateRoute path="/"><Top /></PrivateRoute>
         </Switch>
       </Router>
-    </RecoilRoot>
+    </CookiesProvider>
   )
 }
 
