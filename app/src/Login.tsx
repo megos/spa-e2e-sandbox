@@ -12,15 +12,19 @@ import {
 } from '@material-ui/core'
 import { useHistory } from 'react-router-dom'
 import { api } from './api'
+import { useSetRecoilState } from 'recoil'
+import { userState } from './recoil'
 
 export const Login = () => {
   const [id, setId] = useState('')
   const [password, setPassword] = useState('')
   const history = useHistory()
+  const setUser = useSetRecoilState(userState)
 
   const onSubmit = async () => {
     const result = await api.login({ id, password })
     if (result) {
+      setUser(result)
       history.push('/')
     }
   }
