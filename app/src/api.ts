@@ -12,6 +12,12 @@ const login = async ({ id, password }: { id: string; password: string }) => {
   }
 }
 
+const logout = async () => {
+  await sleep(1000)
+  return null
+}
+
 export const api = {
   login,
+  logout,
 }
