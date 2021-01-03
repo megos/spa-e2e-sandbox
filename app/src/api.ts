@@ -17,7 +17,13 @@ const logout = async () => {
   return null
 }
 
+const getData = async () => {
+  await sleep(2000)
+  return [...Array(10).keys()]
+}
+
 export const api = {
   login,
   logout,
+  getData,
 }
