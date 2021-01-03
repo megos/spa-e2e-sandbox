@@ -9,8 +9,9 @@ import {
   Toolbar,
   Typography,
 } from '@material-ui/core'
-import { api } from './api'
+import { Skeleton } from '@material-ui/lab'
 import { useCookies } from 'react-cookie'
+import { api } from './api'
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -51,11 +52,17 @@ export const Top = () => {
       </AppBar>
       <Box p={3}>
         <Grid container spacing={3}>
-          {data.map((d) => (
-            <Grid item xs={3} key={d}>
-              <Paper className={classes.paper}>data: {d}</Paper>
-            </Grid>
-          ))}
+          {data.length === 0
+            ? [...Array(4)].map((_, i) => (
+                <Grid item xs={3} key={i}>
+                  <Skeleton height={64} />
+                </Grid>
+              ))
+            : data.map((d) => (
+                <Grid item xs={3} key={d}>
+                  <Paper className={classes.paper}>data: {d}</Paper>
+                </Grid>
+              ))}
         </Grid>
       </Box>
     </>
