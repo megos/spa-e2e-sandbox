@@ -1,6 +1,11 @@
 context('Top page', () => {
   it('has messages', () => {
     cy.visit('/')
-    cy.contains('Edit src/App.tsx and save to reload.')
+
+    cy.get('input[name=id]').type('user1')
+    cy.get('input[name=password]').type('user1password')
+    cy.contains('button', 'Login').click()
+
+    cy.contains('hi')
   })
 })
