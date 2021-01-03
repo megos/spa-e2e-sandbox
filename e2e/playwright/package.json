@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "lint": "prettier --check \"top.spec.js\"",
+    "format": "prettier --write \"top.spec.js\"",
     "test": "node top.spec.js"
   },
   "devDependencies": {

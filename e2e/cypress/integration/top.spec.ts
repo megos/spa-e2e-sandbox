@@ -6,10 +6,8 @@ context('Flow', () => {
     cy.contains('button', 'Login').click()
     cy.contains('Top')
 
-
     cy.contains('data: 5').click()
     cy.contains('hello: 5')
-
 
     cy.contains('button', 'Logout').click()
     cy.contains('Login')
