@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "prettier --check \"{integration,plugins,support}/**/*.{js,ts}\"",
+    "format": "prettier --write \"{integration,plugins,support}/**/*.{js,ts}\"",
     "cy:run:chrome": "cypress run --browser chrome",
     "cy:run:firefox": "cypress run --browser firefox"
   },
