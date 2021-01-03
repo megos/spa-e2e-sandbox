@@ -1,18 +1,16 @@
 import React, { useState } from 'react'
 import {
-  AppBar,
   Box,
   Button,
   Card,
   CardActions,
   CardContent,
   TextField,
-  Toolbar,
-  Typography,
 } from '@material-ui/core'
 import { useHistory } from 'react-router-dom'
 import { api } from './api'
 import { useCookies } from 'react-cookie'
+import { AppBar } from './AppBar'
 
 export const Login = () => {
   const [id, setId] = useState('')
@@ -30,11 +28,7 @@ export const Login = () => {
 
   return (
     <>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6">Login</Typography>
-        </Toolbar>
-      </AppBar>
+      <AppBar title="Login" />
       <Box display="flex" justifyContent="center">
         <Card style={{ width: 300, marginTop: 16 }}>
           <CardContent>

@@ -1,22 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import {
-  AppBar,
   Box,
-  Button,
   Grid,
   makeStyles,
   Paper,
-  Toolbar,
-  Typography,
 } from '@material-ui/core'
 import { Skeleton } from '@material-ui/lab'
-import { useCookies } from 'react-cookie'
 import { api } from './api'
+import { AppBar } from './AppBar'
 
 const useStyles = makeStyles((theme) => ({
-  title: {
-    flexGrow: 1,
-  },
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
@@ -26,13 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const Top = () => {
   const classes = useStyles()
-  const [, , removeCookie] = useCookies()
   const [data, setData] = useState<number[]>([])
-
-  const logout = async () => {
-    await api.logout()
-    removeCookie('token')
-  }
 
   useEffect(() => {
     api.getData().then(setData)
@@ -40,16 +27,7 @@ export const Top = () => {
 
   return (
     <>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" className={classes.title}>
-            Top
-          </Typography>
-          <Button color="inherit" onClick={logout}>
-            Logout
-          </Button>
-        </Toolbar>
-      </AppBar>
+      <AppBar title="Top" />
       <Box p={3}>
         <Grid container spacing={3}>
           {data.length === 0
