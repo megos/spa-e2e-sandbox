@@ -8,6 +8,7 @@ import {
 import { Skeleton } from '@material-ui/lab'
 import { api } from './api'
 import { AppBar } from './AppBar'
+import { useHistory } from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -20,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
 export const Top = () => {
   const classes = useStyles()
   const [data, setData] = useState<number[]>([])
+  const history = useHistory()
 
   useEffect(() => {
     api.getData().then(setData)
@@ -38,7 +40,7 @@ export const Top = () => {
               ))
             : data.map((d) => (
                 <Grid item xs={3} key={d}>
-                  <Paper className={classes.paper}>data: {d}</Paper>
+                  <Paper className={classes.paper} onClick={() => history.push(`/details/${d}`)}>data: {d}</Paper>
                 </Grid>
               ))}
         </Grid>

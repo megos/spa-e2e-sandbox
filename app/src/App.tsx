@@ -9,6 +9,7 @@ import {
 import { CookiesProvider, useCookies } from 'react-cookie'
 import { Login } from './Login'
 import { Top } from './Top'
+import { Detail } from './Detail'
 
 const PrivateRoute: React.FC<RouteProps> = ({ children, ...rest }) => {
   const [cookies] = useCookies(['token'])
@@ -25,8 +26,9 @@ function App() {
     <CookiesProvider>
       <Router>
         <Switch>
-          <Route path="/login" component={Login} />
-          <PrivateRoute path="/"><Top /></PrivateRoute>
+          <Route exact path="/login" component={Login} />
+          <PrivateRoute exact path="/"><Top /></PrivateRoute>
+          <PrivateRoute exact path="/details/:id"><Detail /></PrivateRoute>
         </Switch>
       </Router>
     </CookiesProvider>
