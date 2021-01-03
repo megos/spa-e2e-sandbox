@@ -27,8 +27,12 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/login" component={Login} />
-          <PrivateRoute exact path="/"><Top /></PrivateRoute>
-          <PrivateRoute exact path="/details/:id"><Detail /></PrivateRoute>
+          <PrivateRoute exact path="/">
+            <Top />
+          </PrivateRoute>
+          <PrivateRoute exact path="/details/:id">
+            <Detail />
+          </PrivateRoute>
         </Switch>
       </Router>
     </CookiesProvider>

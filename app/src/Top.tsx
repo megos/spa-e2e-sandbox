@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {
-  Box,
-  Grid,
-  makeStyles,
-  Paper,
-} from '@material-ui/core'
+import { Box, Grid, makeStyles, Paper } from '@material-ui/core'
 import { Skeleton } from '@material-ui/lab'
 import { api } from './api'
 import { AppBar } from './AppBar'
@@ -40,7 +35,12 @@ export const Top = () => {
               ))
             : data.map((d) => (
                 <Grid item xs={3} key={d}>
-                  <Paper className={classes.paper} onClick={() => history.push(`/details/${d}`)}>data: {d}</Paper>
+                  <Paper
+                    className={classes.paper}
+                    onClick={() => history.push(`/details/${d}`)}
+                  >
+                    data: {d}
+                  </Paper>
                 </Grid>
               ))}
         </Grid>
