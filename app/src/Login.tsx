@@ -42,6 +42,7 @@ export const Login = () => {
             <div>
               <TextField
                 label="id"
+                name="id"
                 fullWidth
                 value={id}
                 onChange={(e) => setId(e.target.value)}
@@ -50,6 +51,7 @@ export const Login = () => {
             <div>
               <TextField
                 label="password"
+                name="password"
                 type="password"
                 fullWidth
                 value={password}
