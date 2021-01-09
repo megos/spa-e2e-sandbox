@@ -1,0 +1,34 @@
+name: testcafe
+on:
+  - pull_request
+  
+jobs:
+  testcafe:
+    name: runner / testcafe
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+
+      - run: yarn
+
+      - name: launch app
+        run: yarn workspace app start &
+
+      # https://github.com/DevExpress/testcafe-action
+      - name: testcafe
+        run: yarn workspace testcafe test

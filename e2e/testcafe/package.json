@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "prettier --check \"top.spec.js\"",
-    "format": "prettier --write \"top.spec.js\"",
-    "test": "node top.spec.js"
+    "lint": "prettier --check \"top.spec.ts\"",
+    "format": "prettier --write \"top.spec.ts\"",
+    "test": "testcafe \"chrome:headless\" top.spec.ts"
   },
   "devDependencies": {
     "testcafe": "1.10.1"
