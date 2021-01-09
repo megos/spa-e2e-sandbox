@@ -1,0 +1,13 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "lint": "prettier --check \"top.spec.js\"",
+    "format": "prettier --write \"top.spec.js\"",
+    "test": "node top.spec.js"
+  },
+  "devDependencies": {
+    "testcafe": "1.10.1"
+  }
+}
