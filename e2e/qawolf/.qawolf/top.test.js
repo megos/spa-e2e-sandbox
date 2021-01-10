@@ -1,3 +1,4 @@
+const { assertElementText } = require("qawolf");
 const qawolf = require("qawolf");
 
 let browser;
@@ -23,5 +24,7 @@ test("top", async () => {
   await page.fill('[name="password"]', "user1password");
   await page.click(".MuiButton-root");
   await page.click("text=5");
+  await assertElementText(page, 'div', 'hello: 5')
   await page.click(".MuiButton-root");
+  await assertElementText(page, 'h6', 'Login')
 });
