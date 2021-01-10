@@ -6,6 +6,9 @@
   "author": "megos",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "wait": "wait-on http://localhost:8080"
+  },
   "workspaces": [
     "app",
     "e2e/*"
