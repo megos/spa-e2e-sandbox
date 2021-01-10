@@ -1,0 +1,8 @@
+{
+  "name": "qawolf",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "qawolf": "1.7.0"
+  }
+}
