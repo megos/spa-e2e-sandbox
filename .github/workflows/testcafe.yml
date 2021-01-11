@@ -29,6 +29,8 @@ jobs:
       - name: launch app
         run: yarn workspace app start &
 
+      - run: yarn wait
+
       # https://github.com/DevExpress/testcafe-action
       - name: testcafe
         run: yarn workspace testcafe test
