@@ -1,0 +1,36 @@
+name: qawolf
+on:
+  - pull_request
+  
+jobs:
+  qawolf:
+    name: runner / qawolf
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            ~/.cache/ms-playwright
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+
+      - run: yarn
+
+      - name: launch app
+        run: yarn workspace app start &
+
+      - run: yarn wait
+
+      - name: qawolf
+        run: yarn workspace qawolf test
