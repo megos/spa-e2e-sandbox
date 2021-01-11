@@ -6,12 +6,16 @@
   "author": "megos",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "wait": "wait-on http://localhost:8080"
+  },
   "workspaces": [
     "app",
     "e2e/*"
   ],
   "devDependencies": {
     "prettier": "2.2.1",
-    "typescript": "4.1.3"
+    "typescript": "4.1.3",
+    "wait-on": "5.2.1"
   }
 }

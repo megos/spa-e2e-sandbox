@@ -1,10 +1,10 @@
-name: testcafe
+name: qawolf
 on:
   - pull_request
   
 jobs:
-  testcafe:
-    name: runner / testcafe
+  qawolf:
+    name: runner / qawolf
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -19,6 +19,7 @@ jobs:
         with:
           path: |
             ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            ~/.cache/ms-playwright
             node_modules
             */*/node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
@@ -31,6 +32,5 @@ jobs:
 
       - run: yarn wait
 
-      # https://github.com/DevExpress/testcafe-action
-      - name: testcafe
-        run: yarn workspace testcafe test
+      - name: qawolf
+        run: yarn workspace qawolf test
