@@ -1518,10 +1518,10 @@
     execa "^4.0.3"
     npm-run-path "^4.0.1"
 
-"@snowpack/web-test-runner-plugin@0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@snowpack/web-test-runner-plugin/-/web-test-runner-plugin-0.1.5.tgz#239438189785c1f739c42cf711b52b41c48dce21"
-  integrity sha512-aeX08rgqR4WYexGtwnY7nZCjbkzIMK9RIvhNVtyg8Xr6VF9HgCOYnTo2rp/y1PWenUba3o2cYAGcl6RuBIXLbw==
+"@snowpack/web-test-runner-plugin@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@snowpack/web-test-runner-plugin/-/web-test-runner-plugin-0.2.0.tgz#1d79e504e0c32054dcdf2d010ff492db62acb2fe"
+  integrity sha512-KVAzHvWRw1s/x+dZPtU33r1ihdy7MkcsLXCPYpfI9O6O+hLkzncoEvjKXOcWBaR8dunzd0Opej9GMFTDDCoVvQ==
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
