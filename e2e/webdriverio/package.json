@@ -1,0 +1,8 @@
+{
+  "name": "webdriverio",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@wdio/cli": "6.12.0"
+  }
+}
