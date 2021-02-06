@@ -2297,6 +2297,32 @@
     source-map "^0.7.3"
     uuid "^8.3.2"
 
+"@web/test-runner-core@^0.10.9":
+  version "0.10.9"
+  resolved "https://registry.yarnpkg.com/@web/test-runner-core/-/test-runner-core-0.10.9.tgz#4ea4cb958d314a8513d8f356ed37a5f69e9f3b47"
+  integrity sha512-8A+2uxhhTKPJH7P5TejC2a69uSNdJXInUhy95tUWXvnTTs9EV8m341+SALxSvecrektQXwDO6gHldIbocIt8nA==
+  dependencies:
+    "@babel/code-frame" "^7.12.11"
+    "@web/browser-logs" "^0.2.1"
+    "@web/dev-server-core" "^0.3.4"
+    chalk "^4.1.0"
+    chokidar "^3.4.3"
+    cli-cursor "^3.1.0"
+    co-body "^6.1.0"
+    convert-source-map "^1.7.0"
+    debounce "^1.2.0"
+    dependency-graph "^0.10.0"
+    globby "^11.0.1"
+    ip "^1.1.5"
+    istanbul-lib-coverage "^3.0.0"
+    istanbul-lib-report "^3.0.0"
+    istanbul-reports "^3.0.2"
+    log-update "^4.0.0"
+    open "^7.3.0"
+    picomatch "^2.2.2"
+    source-map "^0.7.3"
+    uuid "^8.3.2"
+
 "@web/test-runner-coverage-v8@^0.4.5":
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/@web/test-runner-coverage-v8/-/test-runner-coverage-v8-0.4.5.tgz#38192c99d969108ebb43fe7fbda30c0f7d162283"
@@ -2315,17 +2341,17 @@
     "@types/mocha" "^8.2.0"
     "@web/test-runner-core" "^0.10.8"
 
-"@web/test-runner@0.12.12":
-  version "0.12.12"
-  resolved "https://registry.yarnpkg.com/@web/test-runner/-/test-runner-0.12.12.tgz#823e78b8bca9e297ac6f28f30d272cc934b13102"
-  integrity sha512-peBagc5qXgLY7cFKqbutzOwp04yAxPhfxECihnaSN8SjBr46njC9yLQ2WBrtvIN3UKF51dTefrj47++rEIbiFA==
+"@web/test-runner@0.12.13":
+  version "0.12.13"
+  resolved "https://registry.yarnpkg.com/@web/test-runner/-/test-runner-0.12.13.tgz#1706cda10bb487788fee50ee41cce6d73b1dc611"
+  integrity sha512-F0hOhCIN6NoS0JRUHYwaqNMHM2zr60beBz+BGhpCF8fhmtH95OaSWxFpxtVE5XpJmaqZgfyX78WR5GVCEk8EBA==
   dependencies:
     "@web/browser-logs" "^0.2.0"
     "@web/config-loader" "^0.1.3"
     "@web/dev-server" "^0.1.5"
     "@web/test-runner-chrome" "^0.9.4"
     "@web/test-runner-commands" "^0.4.1"
-    "@web/test-runner-core" "^0.10.8"
+    "@web/test-runner-core" "^0.10.9"
     "@web/test-runner-mocha" "^0.7.2"
     camelcase "^6.2.0"
     chalk "^4.1.0"
