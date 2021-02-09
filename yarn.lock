@@ -1993,10 +1993,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/promise-all-settled/-/promise-all-settled-1.1.2.tgz#aa58042711d6e3275dd37dc597e5d31e8c290a44"
   integrity sha512-sL/cEvJWAnClXw0wHk85/2L0G6Sj8UB0Ctc1TEMbKSsmpRosqhwj9gWgFRZSrBr2f9tiXISwNhCPmlfqUqyb9Q==
 
-"@wdio/cli@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-7.0.0.tgz#1bd8c1acd0cf239f804ef6a56f7f771cbde123f3"
-  integrity sha512-LA1t+OG4z0HhMcUAd2zpRrWlHJ2M2ups5+I4EwW40503FfXb+4c26UIMlSPqUP52RuUi1D4n7YJ6aHBkcwTSXQ==
+"@wdio/cli@7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-7.0.1.tgz#226cd807b02a3bb3c30968f76a69621489b5e74f"
+  integrity sha512-bmL12lPsFffRdYbL51muYF/Vkb2ValO9WIBw0MDhU+P8TmKukSgTKKgXv4eEoHXVKBTU9B1j8qLIAQXfz7z28g==
   dependencies:
     "@types/ejs" "^3.0.5"
     "@types/fs-extra" "^9.0.4"
@@ -2021,7 +2021,7 @@
     lodash.union "^4.6.0"
     mkdirp "^1.0.4"
     recursive-readdir "^2.2.2"
-    webdriverio "7.0.0"
+    webdriverio "7.0.1"
     yargs "^16.0.3"
     yarn-install "^1.0.0"
 
@@ -2035,15 +2035,15 @@
     deepmerge "^4.0.0"
     glob "^7.1.2"
 
-"@wdio/local-runner@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-7.0.0.tgz#02fb26b9da87b2938e09918a903fd938873e13a7"
-  integrity sha512-Ar6nzvZCBqqFZ7bD3NMFBo+dAUmGNnYe8RAselED7F1BzSddwHxCO+GOAUyjlQdxBFuR5TxC76PmOeCi76KoNQ==
+"@wdio/local-runner@7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-7.0.1.tgz#55f6c6af1d939f006b0326c1641a8baeedefddfa"
+  integrity sha512-SW217PmT4Li+2UsmrxuebI7yX0T+kemcVha0J0SwpIyjYY0dV8mKv5LQ9/Ik8buelJBNk5cfTW6wan/eJbmLaw==
   dependencies:
     "@types/stream-buffers" "^3.0.3"
     "@wdio/logger" "7.0.0"
     "@wdio/repl" "7.0.0"
-    "@wdio/runner" "7.0.0"
+    "@wdio/runner" "7.0.1"
     "@wdio/types" "7.0.0"
     async-exit-hook "^2.0.1"
     stream-buffers "^3.0.2"
@@ -2091,10 +2091,10 @@
     "@wdio/types" "7.0.0"
     fs-extra "^9.0.0"
 
-"@wdio/runner@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-7.0.0.tgz#15b99d33d079f9145bb248efdfd47137c8b432bb"
-  integrity sha512-F+hkmp8Uax78ONN2ujL6BARqqU5JOiwac5bGAgyDK5X/iC9nUF+GM4E/EDZidjDGu1iMnKEfKAektgog4qUVTg==
+"@wdio/runner@7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-7.0.1.tgz#dc13a5da3c91c92bb45424dfeb47afc910361f9e"
+  integrity sha512-tQzypsECyByevl3Ing0BbCWeSFJ0K+aLPI2RPzcVmqbGpp4tiAqZM50lyWTK1Gh+G9rs9AEYq2DD6zV7m6MwdA==
   dependencies:
     "@wdio/config" "7.0.0"
     "@wdio/logger" "7.0.0"
@@ -2103,12 +2103,12 @@
     deepmerge "^4.0.0"
     gaze "^1.1.2"
     webdriver "7.0.0"
-    webdriverio "7.0.0"
+    webdriverio "7.0.1"
 
-"@wdio/spec-reporter@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@wdio/spec-reporter/-/spec-reporter-7.0.0.tgz#aeff9cc61fead0082869a833f3c3c97cd92f6470"
-  integrity sha512-dGlWw6nYkidiZr/qPmRfE7tLBXVB/NKgInOAKXU1NpFLVAfsoSa2yuXgXiOj9DB9x11bmwp33WadUi5oIXbC9w==
+"@wdio/spec-reporter@7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@wdio/spec-reporter/-/spec-reporter-7.0.1.tgz#b8ed5e009d2be3c16760051e7bc02991b29680b5"
+  integrity sha512-d9BuF2gm5b8+wtAe3bmNFSJPQKk8MjohhlIi8C064c7VwlX+EUc9Z0WtHOs6n3qy7bdQw5NouARg1m9kpe1tQw==
   dependencies:
     "@types/easy-table" "^0.0.32"
     "@wdio/reporter" "7.0.0"
@@ -2117,17 +2117,17 @@
     easy-table "^1.1.1"
     pretty-ms "^7.0.0"
 
-"@wdio/sync@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-7.0.0.tgz#a0bf89317add01f36735eabdd5217da292e8c23c"
-  integrity sha512-lcXiS/yvK/8kLZXT87Nn/MbmdJyY21tyWlSjWo0foWB/Y0DwWzhlGhCMN0ZVnGd7HOCC2nzGqyz+m5WMp8Ouig==
+"@wdio/sync@7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-7.0.1.tgz#380bb93d7bef54e10d8e415800c72d0ff8e7311e"
+  integrity sha512-4ReneKgvyDi+KGgiCQNO8hiwvmVC8O776HtJTbsnrzFG+OdLqDIxMC6aB4MR3ncOqaw3rP6Je1vrO9LX9/6HMg==
   dependencies:
     "@types/fibers" "^3.1.0"
     "@types/puppeteer" "^5.4.0"
     "@wdio/logger" "7.0.0"
     "@wdio/types" "7.0.0"
     fibers "^5.0.0"
-    webdriverio "7.0.0"
+    webdriverio "7.0.1"
 
 "@wdio/types@7.0.0":
   version "7.0.0"
@@ -10042,10 +10042,10 @@ webdriver@7.0.0:
     got "^11.0.2"
     lodash.merge "^4.6.1"
 
-webdriverio@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-7.0.0.tgz#984145c031630300d851ac0d0113339fc70c8a20"
-  integrity sha512-VpHeNBuOSK/Q5F6m2X/sVXefbDX0e4GDTPMumDzJtwE0oiZoDRpj4mThvKaw30+QMRox/DpyLFvtovRrCxqjhQ==
+webdriverio@7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-7.0.1.tgz#c7b5c1a077080a1c443801c9fe67446c860460be"
+  integrity sha512-MOILmvIEbVCJBSpm2zifGzx6npDq5z4pruv2uEMzux85sLrMHTC5xpvajnajMEqCOUJ5LWDJkBoMURJqOI7MiA==
   dependencies:
     "@types/puppeteer-core" "^5.4.0"
     "@wdio/config" "7.0.0"
