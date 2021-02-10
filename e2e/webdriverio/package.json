@@ -15,7 +15,7 @@
     "@wdio/sync": "7.0.1",
     "chromedriver": "88.0.0",
     "ts-node": "9.1.1",
-    "typescript": "4.1.4",
+    "typescript": "4.1.5",
     "wdio-chromedriver-service": "6.0.4"
   }
 }
