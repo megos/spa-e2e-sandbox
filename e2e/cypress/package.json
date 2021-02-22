@@ -9,6 +9,6 @@
     "cy:run:firefox": "cypress run --browser firefox"
   },
   "devDependencies": {
-    "cypress": "^6.2.0"
+    "cypress": "6.2.0"
   }
 }
