@@ -8,6 +8,6 @@
     "test": "testcafe \"chrome:headless\" top.spec.ts"
   },
   "devDependencies": {
-    "testcafe": "1.10.1"
+    "testcafe": "1.11.0"
   }
 }
