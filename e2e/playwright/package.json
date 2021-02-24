@@ -9,6 +9,6 @@
     "test": "node top.spec.js"
   },
   "devDependencies": {
-    "playwright": "1.8.1"
+    "playwright": "1.9.0"
   }
 }
