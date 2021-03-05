@@ -1497,6 +1497,11 @@
   resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-4.2.0.tgz#14264692a9d6e2fa4db3df5e56e94b5e25647ac0"
   integrity sha512-iIgQNzCm0v7QMhhe4Jjn9uRh+I6GoPmt03CbEtwx3ao8/EfoQcmgtqH4vQ5Db/lxiIGaWDv6nwvunuh0RyX0+A==
 
+"@types/aria-query@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-4.2.1.tgz#78b5433344e2f92e8b306c06a5622c50c245bf6b"
+  integrity sha512-S6oPal772qJZHoRZLFc/XoZW2gFvwXusYUmXPXkgxJLuEk2vOt7jc4Yo6z/vtI0EBkbPBVrJJ0B+prLIKiWqHg==
+
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.12"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.12.tgz#4d8e9e51eb265552a7e4f1ff2219ab6133bdfb2d"
@@ -1991,10 +1996,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/promise-all-settled/-/promise-all-settled-1.1.2.tgz#aa58042711d6e3275dd37dc597e5d31e8c290a44"
   integrity sha512-sL/cEvJWAnClXw0wHk85/2L0G6Sj8UB0Ctc1TEMbKSsmpRosqhwj9gWgFRZSrBr2f9tiXISwNhCPmlfqUqyb9Q==
 
-"@wdio/cli@7.0.9":
-  version "7.0.9"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-7.0.9.tgz#cfccfc88493b345356425900f4c55f8b3017cc32"
-  integrity sha512-kRZ6uZcJzsoMQUiU1aI5vUfk/xfmoSxMapPplXpMhsy9sTQZCP48EQrDjxPqSkCMpVeFnDnws90GiTK2y6dL5Q==
+"@wdio/cli@7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-7.1.0.tgz#86262c93fa459394156ea610b087fd55fa1d540b"
+  integrity sha512-9G5sdOpmYobGoGiySSEBXayMKADtD4K/hpOaC7cAK8aB4tL4D4IygxE/hwl+1BhS3BlX/cWyAC0zF8P4W9uj0Q==
   dependencies:
     "@types/ejs" "^3.0.5"
     "@types/fs-extra" "^9.0.4"
@@ -2019,7 +2024,7 @@
     lodash.union "^4.6.0"
     mkdirp "^1.0.4"
     recursive-readdir "^2.2.2"
-    webdriverio "7.0.9"
+    webdriverio "7.1.0"
     yargs "^16.0.3"
     yarn-install "^1.0.0"
 
@@ -2033,15 +2038,15 @@
     deepmerge "^4.0.0"
     glob "^7.1.2"
 
-"@wdio/local-runner@7.0.9":
-  version "7.0.9"
-  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-7.0.9.tgz#f415fc4583a0a705b53242dae0d2617809520be0"
-  integrity sha512-L9kHFuAy8qp2+mqhn8yynx8IpkP2bYJ92ve+rucUuJAGF0Whe4a+uFwCiku/h08EEqQ+ITtAHmHnUqFom3J8jw==
+"@wdio/local-runner@7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-7.1.0.tgz#393d831acfe79e976b2368eba3f43b2865683492"
+  integrity sha512-pliKd50pdJtf1Jxg+Se1DXNlLPOjZNvyPC6Z+/hTFCjNIPPWbbZNPBYaSqgevSOMXjqQhrhtpU+Vkojtxu1X7g==
   dependencies:
     "@types/stream-buffers" "^3.0.3"
     "@wdio/logger" "7.0.0"
     "@wdio/repl" "7.0.7"
-    "@wdio/runner" "7.0.9"
+    "@wdio/runner" "7.1.0"
     "@wdio/types" "7.0.7"
     async-exit-hook "^2.0.1"
     stream-buffers "^3.0.2"
@@ -2089,10 +2094,10 @@
     "@wdio/types" "7.0.7"
     fs-extra "^9.0.0"
 
-"@wdio/runner@7.0.9":
-  version "7.0.9"
-  resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-7.0.9.tgz#ae22dfe8daadae1d7b8418a5026c897ad89faee5"
-  integrity sha512-ToIr5BEIp5LuZHs/ahHNezqcAV5E5i5Ap5bfsIsyd2qgJlP87DplmwPaJ7a7y8DEEOE7e9avU0UOAWb6+ZCQKg==
+"@wdio/runner@7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-7.1.0.tgz#688ccb805be5c9d593399b4778cff709d162b845"
+  integrity sha512-VVlcgY+lqsak2qCAFFwJ/yquhojUpoqpgJpGbLTDiNzbIYBSLblVzFtyGPaSdU/45Wu06fz5pG+Js5JyV69P/Q==
   dependencies:
     "@wdio/config" "7.0.7"
     "@wdio/logger" "7.0.0"
@@ -2101,7 +2106,7 @@
     deepmerge "^4.0.0"
     gaze "^1.1.2"
     webdriver "7.0.7"
-    webdriverio "7.0.9"
+    webdriverio "7.1.0"
 
 "@wdio/spec-reporter@7.0.7":
   version "7.0.7"
@@ -2115,17 +2120,17 @@
     easy-table "^1.1.1"
     pretty-ms "^7.0.0"
 
-"@wdio/sync@7.0.9":
-  version "7.0.9"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-7.0.9.tgz#796a99d28a485662490c10f01252464341573b21"
-  integrity sha512-833wxSIPv5RX5fUgb3hoO/wDmYDKJ44CZMSed+SQSamQ7l+Gn1rCzHAniQRQpdTeL2Q2cPJYv/V4a5GfVkIFoA==
+"@wdio/sync@7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-7.1.0.tgz#aaa929731a66207fc629d88bb2f4c1bc9faf9f1f"
+  integrity sha512-QsDGEiq5Sgarixg2ZAC5XbhTWOWeuLHPSUJbdm940oV7W/aIr4QTXlRpgiQYwbLskxnw4Fdv32uk9326I+fkqQ==
   dependencies:
     "@types/fibers" "^3.1.0"
     "@types/puppeteer" "^5.4.0"
     "@wdio/logger" "7.0.0"
     "@wdio/types" "7.0.7"
     fibers "^5.0.0"
-    webdriverio "7.0.9"
+    webdriverio "7.1.0"
 
 "@wdio/types@7.0.7":
   version "7.0.7"
@@ -10196,11 +10201,12 @@ webdriver@7.0.7:
     got "^11.0.2"
     lodash.merge "^4.6.1"
 
-webdriverio@7.0.9:
-  version "7.0.9"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-7.0.9.tgz#b98f05ea025ae6d05ff4fb742b13f6950524406d"
-  integrity sha512-Ko9JtH3cz4Oc0a9eXDXfVKimSQrh1FhErLl5IPVr0Ocp0g44CVGRHlAKqIUlS7PmM/zs1mbZ5TsneIOLL42U8Q==
+webdriverio@7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-7.1.0.tgz#12d40d329d8cb83859efbc5e6050d9c18399b0df"
+  integrity sha512-YCSy7m54FoeA3VkijYtaYakUC6AKyG862tYfkX/TtPW6xclNcb9txbAtIflA6QhZyAKwSj0iGaheIFGvfrYTpQ==
   dependencies:
+    "@types/aria-query" "^4.2.1"
     "@wdio/config" "7.0.7"
     "@wdio/logger" "7.0.0"
     "@wdio/protocols" "7.0.0"
@@ -10208,6 +10214,7 @@ webdriverio@7.0.9:
     "@wdio/types" "7.0.7"
     "@wdio/utils" "7.0.7"
     archiver "^5.0.0"
+    aria-query "^4.2.2"
     atob "^2.1.2"
     css-shorthand-properties "^1.1.1"
     css-value "^0.0.1"
