@@ -2002,10 +2002,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/promise-all-settled/-/promise-all-settled-1.1.2.tgz#aa58042711d6e3275dd37dc597e5d31e8c290a44"
   integrity sha512-sL/cEvJWAnClXw0wHk85/2L0G6Sj8UB0Ctc1TEMbKSsmpRosqhwj9gWgFRZSrBr2f9tiXISwNhCPmlfqUqyb9Q==
 
-"@wdio/cli@7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-7.1.1.tgz#2a9362ba788ae4cbdf57a225911c8b2cd6430fce"
-  integrity sha512-jWB98ZhUzvyqQwaXHh3DwVkLz1IB2y1rSt7Qu9wLXOneMBkt/D6bxbh0PwSP/hKgPD6SLOm26U2lPUKKM8rtEA==
+"@wdio/cli@7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-7.1.2.tgz#670659e7fb8406fa181c84fbd966d9ca9b1f21ff"
+  integrity sha512-q4rNnaSNQw14eY+g8JB8gkohf1D6QAAtm62iaUAy4SnJMwmfuyikmNxa5QzVQ+QAMzpSUhJP2jDSmekjlJTMKA==
   dependencies:
     "@types/ejs" "^3.0.5"
     "@types/fs-extra" "^9.0.4"
@@ -2044,10 +2044,10 @@
     deepmerge "^4.0.0"
     glob "^7.1.2"
 
-"@wdio/local-runner@7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-7.1.1.tgz#2f6b5d05937a0fb935bc568a7457efc97e89fdd9"
-  integrity sha512-zv+TqAfDF0/Azw61QOBmnlwDl/r8Xh5DwsfUwi4x8cjE+f7brAqNaxTEb8WwUk4DfoHKzUKUL3T1YZcNllSaTQ==
+"@wdio/local-runner@7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-7.1.2.tgz#cb86a737b281956f35c8bf8b8e06bb71b0616a46"
+  integrity sha512-hEYJ6JcyCJb2CXQ49FZyrj4aFGZECH+lkHreuFEsw+Xu1uaK6deYWISTEO+ct+10CBV6szAHSno2koDF/2sM+A==
   dependencies:
     "@types/stream-buffers" "^3.0.3"
     "@wdio/logger" "7.0.0"
@@ -2067,16 +2067,16 @@
     loglevel-plugin-prefix "^0.8.4"
     strip-ansi "^6.0.0"
 
-"@wdio/mocha-framework@7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-7.1.1.tgz#52dc41e09b043e9eaf2a53c2eca6f7bd067142eb"
-  integrity sha512-jn3G3mdqKH3e92jQ7fv8sJ3qM4eqJMzpjn7l+ok6bRjbiLpgjycgYHFbSfpp1pnwOgufgobdgQj0Nh4xeKglbw==
+"@wdio/mocha-framework@7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-7.1.2.tgz#73c200551ac50fb6fd4985433ba4e82ef398dc6a"
+  integrity sha512-q8gsoafV9aHeFYeqTYumN1uM9NisHopD1hs/bf79W59vVfUPtiYaKz6Ro/HPCzr+N2XF53OBi3EraMjHWShOSg==
   dependencies:
     "@types/mocha" "^8.0.0"
     "@wdio/logger" "7.0.0"
     "@wdio/types" "7.1.1"
     "@wdio/utils" "7.1.1"
-    expect-webdriverio "^1.1.5"
+    expect-webdriverio "^2.0.0"
     mocha "^8.0.1"
 
 "@wdio/protocols@7.1.1":
@@ -4617,15 +4617,15 @@ expand-brackets@^2.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-expect-webdriverio@^1.1.5:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/expect-webdriverio/-/expect-webdriverio-1.4.1.tgz#c44152a2f69501e5f00bfa6c6cf715be3b28fc5a"
-  integrity sha512-b7UGC2Ye0uKTM0giLhqVJvBuVkboxO24YQT6tRkYS6Y54TM+VMjrfNiCOYDnC2JtFwr/c2s0tfMwBD0saZ8kFA==
+expect-webdriverio@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/expect-webdriverio/-/expect-webdriverio-2.0.1.tgz#08193c02d78037d68672a86535363df472e559fc"
+  integrity sha512-ocBCP9tiEC2fA31It1TZO+Z+d0hszx+pYI48XH6dvi6vSVM3NNIk52VBQbuw4aWwg7FMX06M0W0hIF7E5vGZjw==
   dependencies:
-    expect "^26.5.3"
-    jest-matcher-utils "^26.5.2"
+    expect "^26.6.2"
+    jest-matcher-utils "^26.6.2"
 
-expect@^26.5.3, expect@^26.6.2:
+expect@^26.6.2:
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/expect/-/expect-26.6.2.tgz#c6b996bf26bf3fe18b67b2d0f51fc981ba934417"
   integrity sha512-9/hlOBkQl2l/PLHJx6JjoDF6xPKcJEsUlWKb23rKE7KzeDqUZKXKNMW27KIue5JMdBV9HgmoJPcc8HtO85t9IA==
@@ -6187,7 +6187,7 @@ jest-leak-detector@^26.6.2:
     jest-get-type "^26.3.0"
     pretty-format "^26.6.2"
 
-jest-matcher-utils@^26.5.2, jest-matcher-utils@^26.6.2:
+jest-matcher-utils@^26.6.2:
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-26.6.2.tgz#8e6fd6e863c8b2d31ac6472eeb237bc595e53e7a"
   integrity sha512-llnc8vQgYcNqDrqRDXWwMr9i7rS5XFiCwvh6DTP7Jqa2mqpcCBBlpCbn+trkG0KNhPu/h8rzyBkriOtBstvWhw==
