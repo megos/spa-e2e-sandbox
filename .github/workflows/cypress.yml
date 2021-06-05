@@ -30,7 +30,7 @@ jobs:
       - name: launch app
         run: yarn workspace app start &
 
-      # We can use cypress-io/github-action
-      # See. https://github.com/cypress-io/github-action
-      - name: cypress
-        run: yarn workspace cypress cy:run:chrome
+      - uses: cypress-io/github-action@v2
+        with:
+          working-directory: e2e/cypress
+          start: yarn cy:run:chrome
