@@ -3433,17 +3433,16 @@ chrome-remote-interface@^0.25.3:
     commander "2.11.x"
     ws "3.3.x"
 
-chromedriver@88.0.0:
-  version "88.0.0"
-  resolved "https://registry.yarnpkg.com/chromedriver/-/chromedriver-88.0.0.tgz#6833fffd516db23c811eeafa1ee1069b5a12fd2f"
-  integrity sha512-EE8rXh7mikxk3VWKjUsz0KCUX8d3HkQ4HgMNJhWrWjzju12dKPPVHO9MY+YaAI5ryXrXGNf0Y4HcNKgW36P/CA==
+chromedriver@91.0.0:
+  version "91.0.0"
+  resolved "https://registry.yarnpkg.com/chromedriver/-/chromedriver-91.0.0.tgz#b8c07d715c1bde2ed5817757e923bd65565c8f94"
+  integrity sha512-0eQGLDWvfVd1apkqQpt4452bCATrsj50whhVzMqPiazNSfCXXwfYWRonYxx3DVFCG3+RwSCLvsk8/vpuojCyJA==
   dependencies:
     "@testim/chrome-version" "^1.0.7"
     axios "^0.21.1"
     del "^6.0.0"
     extract-zip "^2.0.1"
     https-proxy-agent "^5.0.0"
-    mkdirp "^1.0.4"
     proxy-from-env "^1.1.0"
     tcp-port-used "^1.0.1"
 
@@ -4672,9 +4671,9 @@ expand-brackets@^2.1.4:
     to-regex "^3.0.1"
 
 expect-webdriverio@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/expect-webdriverio/-/expect-webdriverio-2.0.1.tgz#08193c02d78037d68672a86535363df472e559fc"
-  integrity sha512-ocBCP9tiEC2fA31It1TZO+Z+d0hszx+pYI48XH6dvi6vSVM3NNIk52VBQbuw4aWwg7FMX06M0W0hIF7E5vGZjw==
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/expect-webdriverio/-/expect-webdriverio-2.0.2.tgz#fbcdfcbc187f1ec3a742f931f1088da42c2af460"
+  integrity sha512-dst0tqP1aZ2p7TPmbatqoIQ+7hRTw+IeKNi830XxKhu2DNNe5vQ85i9ttf9rpXgbnUf91HxKcocn4G7A5bQxDA==
   dependencies:
     expect "^26.6.2"
     jest-matcher-utils "^26.6.2"
