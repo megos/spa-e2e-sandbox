@@ -23,6 +23,7 @@ jobs:
             */*/node_modules
             ~/.cache/ms-playwright
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-yarn-
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
       - run: yarn
